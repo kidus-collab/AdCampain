@@ -1,11 +1,13 @@
 //import Image from "next/image";
 import styles from "./page.module.css";
-import { Box, Stack } from "@mantine/core";
+import { Paper, Text, Loader } from "@mantine/core";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <h1>Hello world</h1>
+      <Paper>
+        <Text>Hello world</Text>
+      </Paper>
     </main>
   );
 }
