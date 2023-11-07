@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import { Coiny } from "next/font/google";
+
 import { MantineProvider } from "@mantine/core";
 
-const inter = Inter({ subsets: ["latin"] });
+const coiny = Coiny({ subsets: ["latin"], weight: "400" });
 
 // customize mantine provider
 
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <MantineProvider>
       <html lang="en">
-        <body className={inter.className}>{children}</body>
+        <body className={coiny.className}>{children}</body>
       </html>
     </MantineProvider>
   );
