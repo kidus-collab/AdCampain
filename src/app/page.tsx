@@ -1,13 +1,13 @@
 //import Image from "next/image";
-import styles from "./page.module.css";
-import { Paper, Text, Loader } from "@mantine/core";
+
+import { Box, Text, AppShell } from "@mantine/core";
+import NavBar from "./Components/NavBar";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <Paper>
-        <Text>Hello world</Text>
-      </Paper>
+    <main>
+      <NavBar />
+      <Text>Hello world</Text>
     </main>
   );
 }
