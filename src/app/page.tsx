@@ -1,13 +1,17 @@
 //import Image from "next/image";
+import styles from "./page.module.css";
 
-import { Box, Text, AppShell } from "@mantine/core";
+import { Box, Text } from "@mantine/core";
 import NavBar from "./Components/NavBar";
+import Layout from "./Components/LandingPage/Layout";
+import Trusted from "./Components/Trusted";
 
 export default function Home() {
   return (
-    <main>
+    <main className={styles.main}>
       <NavBar />
-      <Text>Hello world</Text>
+      <Layout />
+      <Trusted />
     </main>
   );
 }
