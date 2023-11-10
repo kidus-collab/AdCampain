@@ -6,5 +6,19 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [nextui()],
+  plugins: [
+    nextui({
+      themes: {
+        light: {
+          colors: {
+            addCommonColors: true,
+            blue: {
+              50: "#4341CC",
+              100: "#6572EF",
+            },
+          },
+        },
+      },
+    }),
+  ],
 };
